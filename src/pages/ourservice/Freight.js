@@ -1,5 +1,6 @@
 import React from "react";
 
+import Layout from "../../components/Layout/Layout";
 import container from "../../assests/container.png";
 import containerMobile from "../../assests/containerMobile.png";
 import ServiceFeatures from "./sections/ServiceFeatures";
@@ -9,7 +10,7 @@ import BookDemo from "../../components/Bookdemo/BookDemo";
 
 const Freight = () => {
   return (
-    <>
+    <Layout>
       <ServiceFeatures
         titleB="seamless delivery"
         spanTitle="Global reach,"
@@ -21,7 +22,7 @@ const Freight = () => {
       <WhyChooseUs />
       <Marketplacesection />
       <BookDemo signUpButtonText="Sign up today" demoButtonText="Book a demo" />
-    </>
+    </Layout>
   );
 };
 

@@ -17,35 +17,30 @@ function App() {
 
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
 
-          <Route
-            path="/marketplace/manufacturers"
-            element={<Manufacturers />}
-          />
+        <Route path="/marketplace/manufacturers" element={<Manufacturers />} />
 
-          <Route path="/marketplace/transporters" element={<Transporters />} />
+        <Route path="/marketplace/transporters" element={<Transporters />} />
 
-          <Route path="/service/inland" element={<Inland />} />
+        <Route path="/service/inland" element={<Inland />} />
 
-          <Route path="/service/freight" element={<Freight />} />
+        <Route path="/service/freight" element={<Freight />} />
 
-          <Route path="/service/railcargo" element={<RailCargo />} />
+        <Route path="/service/railcargo" element={<RailCargo />} />
 
-          <Route path="/company" element={<Company />} />
+        <Route path="/company" element={<Company />} />
 
-          <Route path="/blog" element={<BlogPost posts={data} />} />
+        <Route path="/blog" element={<BlogPost posts={data} />} />
 
-          <Route
-            path="/blogpost/:id"
-            element={<BlogPostContent posts={data} />}
-          />
+        <Route
+          path="/blogpost/:id"
+          element={<BlogPostContent posts={data} />}
+        />
 
-          <Route path="*" element={<Homepage />} />
-        </Routes>
-      </Layout>
+        <Route path="*" element={<Homepage />} />
+      </Routes>
     </Router>
   );
 }

@@ -7,6 +7,7 @@ import WhyChooseUs from "./sections/WhyChooseUs";
 import Marketplacesection from "../home/sections/Marketplacesection";
 import Faqs from "../../components/FAQs/Faqs";
 import BookDemo from "../../components/Bookdemo/BookDemo";
+import Layout from "../../components/Layout/Layout";
 
 const faqsData = {
   "What types of goods can I ship using Inland Services?":
@@ -20,22 +21,20 @@ const faqsData = {
 
 const Inland = () => {
   return (
-    <div>
-      <div id="inland">
-        <ServiceFeatures
-          titleA="Efficient"
-          titleB="made easy"
-          spanTitle="domestic transportation"
-          subTitle="Connect with reliable carriers for your road freight needs across the country."
-          image={trucks}
-          imageMobile={trucksMobile}
-        />
-      </div>
+    <Layout>
+      <ServiceFeatures
+        titleA="Efficient"
+        titleB="made easy"
+        spanTitle="domestic transportation"
+        subTitle="Connect with reliable carriers for your road freight needs across the country."
+        image={trucks}
+        imageMobile={trucksMobile}
+      />
       <WhyChooseUs />
       <Marketplacesection />
       <Faqs faqsData={faqsData} />
       <BookDemo signUpButtonText="Sign up today" demoButtonText="Book a demo" />
-    </div>
+    </Layout>
   );
 };
 

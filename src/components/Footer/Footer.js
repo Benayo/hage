@@ -70,7 +70,7 @@ const Footer = () => {
               <NavLink to="/company#about" className="py-2">
                 About us
               </NavLink>
-              <NavLink to="/company#advisory" className="py-2">
+              <NavLink to="/company#team" className="py-2">
                 Our team
               </NavLink>
               <NavLink to="/company#advisory" className="py-2">

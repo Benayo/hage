@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import logo from "../../assests/hage_logo_1.svg";
 import dropdown from "../../assests/down-button-icon.svg";
@@ -38,13 +38,13 @@ const Navbar = () => {
             {/* Service Dropdown Content */}
             {showServiceDropdown && (
               <div className="absolute bg-white-100 text-primary-100 top-full left-0 rounded shadow-md py-2 w-[230%] text-sm">
-                <Link
+                <NavLink
                   to="/service/inland"
                   className="block p-3 hover:bg-secondary-100 text-sm"
                 >
                   Inland Services
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                   to="/service/freight"
                   className="block p-3 hover:bg-secondary-100 text-sm"
                 >
@@ -54,8 +54,8 @@ const Navbar = () => {
                       Coming soon
                     </button>
                   </div>
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                   to="/service/railcargo"
                   className="block p-3 hover:bg-secondary-100 text-sm"
                 >
@@ -65,7 +65,7 @@ const Navbar = () => {
                       Coming soon
                     </button>
                   </div>
-                </Link>
+                </NavLink>
               </div>
             )}
           </li>
@@ -91,18 +91,18 @@ const Navbar = () => {
             {/* Marketplace Dropdown Content */}
             {showMarketplaceDropdown && (
               <div className="absolute bg-white-100 text-primary-100 top-full left-0 rounded shadow-md py-2 w-[230%] text-sm">
-                <Link
+                <NavLink
                   to="/marketplace/manufacturers"
                   className="block p-3 hover:bg-secondary-100 text-sm"
                 >
                   For manufacturers
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                   to="/marketplace/transporters"
                   className="block p-3 hover:bg-secondary-100 text-sm"
                 >
                   For transporters
-                </Link>
+                </NavLink>
               </div>
             )}
           </li>
@@ -128,24 +128,24 @@ const Navbar = () => {
             {/* Company Dropdown Content */}
             {showCompanyDropdown && (
               <div className="absolute bg-white-100 text-primary-100 top-full left-0 rounded shadow-md py-2 w-[250%] text-sm">
-                <Link
+                <NavLink
                   to="/company#about"
                   className="block p-3 hover:bg-secondary-100 text-sm"
                 >
                   About us
-                </Link>
-                <Link
-                  to="/company#advisory"
+                </NavLink>
+                <NavLink
+                  to="/company#team"
                   className="block p-3 hover:bg-secondary-100 text-sm"
                 >
                   Our team & advisory board
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                   to="/company#faq"
                   className="block p-3 hover:bg-secondary-100 text-sm"
                 >
                   FAQ
-                </Link>
+                </NavLink>
                 <div className="flex justify-between items-center p-3 hover:bg-secondary-100 text-sm">
                   <span>Hiring</span>
                   <button className="text-[0.625rem] border border-[#64AB80] text-[#64AB80] rounded-full px-1 ml-2">
@@ -158,9 +158,9 @@ const Navbar = () => {
 
           {/* Blog */}
           <li>
-            <Link to="/blog" className="cursor-pointer">
+            <NavLink to="/blog" className="cursor-pointer">
               <p>Blog</p>
-            </Link>
+            </NavLink>
           </li>
         </ul>
 

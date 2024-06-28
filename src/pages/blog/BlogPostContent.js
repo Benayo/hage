@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
+import Layout from "../../components/Layout/Layout";
 import BlogPostContentFeatures from "./sections/BlogPostContentFeatures";
 import BookDemo from "../../components/Bookdemo/BookDemo";
 import RelatedBlogPost from "./sections/RelatedBlogPost";
@@ -32,24 +33,26 @@ const BlogPostContent = ({ posts }) => {
 
   if (!post) {
     return (
-      <div className="flex flex-col justify-center items-center min-h-[55vh]">
-        <h1 className="text-3xl text-primary-100">Post not found</h1>
-        <button
-          onClick={goBackHandler}
-          className="px-8 md:px-12 py-3 rounded-md bg-secondary-200 text-white-100 mt-8"
-        >
-          Go to Blog
-        </button>
-      </div>
+      <Layout>
+        <div className="flex flex-col justify-center items-center min-h-[55vh]">
+          <h1 className="text-3xl text-primary-100">Post not found</h1>
+          <button
+            onClick={goBackHandler}
+            className="px-8 md:px-12 py-3 rounded-md bg-secondary-200 text-white-100 mt-8"
+          >
+            Go to Blog
+          </button>
+        </div>
+      </Layout>
     );
   }
 
   return (
-    <>
+    <Layout>
       <BlogPostContentFeatures post={post} />
       <BookDemo signUpButtonText="Sign up today" demoButtonText="Book demo" />
       <RelatedBlogPost postId={postId} posts={posts} />
-    </>
+    </Layout>
   );
 };
 

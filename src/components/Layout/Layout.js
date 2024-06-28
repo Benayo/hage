@@ -6,7 +6,7 @@ import MobileMenu from "../navigation/MobileMenu";
 
 const Layout = ({ children }) => {
   return (
-    <div className="">
+    <div>
       <header className="z-50 fixed w-full">
         <HeaderInfo />
         <div className="hidden  md:grid">

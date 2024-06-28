@@ -7,6 +7,7 @@ import TeamHage from "../home/sections/TeamHage";
 import Faqs from "../../components/FAQs/Faqs";
 import SuccessCount from "../home/sections/SuccessCount";
 import { useLocation } from "react-router-dom";
+import Layout from "../../components/Layout/Layout";
 
 const faqsData = {
   "What is Hage?":
@@ -52,7 +53,7 @@ const Company = () => {
   }, [location]);
 
   return (
-    <>
+    <Layout>
       <section id="about">
         <AboutusFeatures />
         <BookDemo demoButtonText="Check it out" />
@@ -60,6 +61,9 @@ const Company = () => {
 
       <section id="advisory">
         <AdvisoryBoard />
+      </section>
+
+      <section id="team">
         <TeamHage />
         <BookDemo
           signUpButtonText="Sign up today"
@@ -72,7 +76,7 @@ const Company = () => {
       </section>
 
       <SuccessCount />
-    </>
+    </Layout>
   );
 };
 
