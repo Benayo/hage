@@ -6,11 +6,10 @@ import ServiceFeatures from "./sections/ServiceFeatures";
 import WhyChooseUs from "./sections/WhyChooseUs";
 import Marketplacesection from "../home/sections/Marketplacesection";
 import BookDemo from "../../components/Bookdemo/BookDemo";
-import Layout from "../../components/Layout/Layout";
 
 const RailCargo = () => {
   return (
-    <Layout>
+    <>
       <ServiceFeatures
         titleA="Powerful and efficient"
         spanTitle="rail transportation"
@@ -22,7 +21,7 @@ const RailCargo = () => {
       <WhyChooseUs />
       <Marketplacesection />
       <BookDemo signUpButtonText="Sign up today" demoButtonText="Book a demo" />
-    </Layout>
+    </>
   );
 };
 

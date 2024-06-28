@@ -7,7 +7,6 @@ import WhyChooseUs from "./sections/WhyChooseUs";
 import Marketplacesection from "../home/sections/Marketplacesection";
 import Faqs from "../../components/FAQs/Faqs";
 import BookDemo from "../../components/Bookdemo/BookDemo";
-import Layout from "../../components/Layout/Layout";
 
 const faqsData = {
   "What types of goods can I ship using Inland Services?":
@@ -21,7 +20,7 @@ const faqsData = {
 
 const Inland = () => {
   return (
-    <Layout>
+    <>
       <ServiceFeatures
         titleA="Efficient"
         titleB="made easy"
@@ -34,7 +33,7 @@ const Inland = () => {
       <Marketplacesection />
       <Faqs faqsData={faqsData} />
       <BookDemo signUpButtonText="Sign up today" demoButtonText="Book a demo" />
-    </Layout>
+    </>
   );
 };
 

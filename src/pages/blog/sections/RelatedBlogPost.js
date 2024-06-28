@@ -10,14 +10,6 @@ const RelatedBlogPost = ({ posts }) => {
 
   const filteredPosts = posts.data.filter((post) => post.id !== postId);
 
-  // if (posts) {
-  //   setLoading(false);
-  // }
-
-  // if (loading) {
-  //   return <BlogLoadingState />;
-  // }
-
   return (
     <div className="bg-white-100">
       <div className="px-4 md:px-16 md:py-4 my-16 md:my-20">

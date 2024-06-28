@@ -8,11 +8,10 @@ import Pricing from "./sections/Pricing";
 import AdvisoryBoard from "./sections/AdvisoryBoard";
 import TeamHage from "./sections/TeamHage";
 import Hiring from "./sections/Hiring";
-import Layout from "../../components/Layout/Layout";
 
 const Homepage = () => {
   return (
-    <Layout>
+    <>
       <Hero />
       <WhyChooseHage />
       <SuccessCount />
@@ -21,7 +20,7 @@ const Homepage = () => {
       <AdvisoryBoard />
       <TeamHage />
       <Hiring />
-    </Layout>
+    </>
   );
 };
 
