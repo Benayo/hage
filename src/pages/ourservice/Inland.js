@@ -21,14 +21,16 @@ const faqsData = {
 const Inland = () => {
   return (
     <div>
-      <ServiceFeatures
-        titleA="Efficient"
-        titleB="made easy"
-        spanTitle="domestic transportation"
-        subTitle="Connect with reliable carriers for your road freight needs across the country."
-        image={trucks}
-        imageMobile={trucksMobile}
-      />
+      <div id="inland">
+        <ServiceFeatures
+          titleA="Efficient"
+          titleB="made easy"
+          spanTitle="domestic transportation"
+          subTitle="Connect with reliable carriers for your road freight needs across the country."
+          image={trucks}
+          imageMobile={trucksMobile}
+        />
+      </div>
       <WhyChooseUs />
       <Marketplacesection />
       <Faqs faqsData={faqsData} />

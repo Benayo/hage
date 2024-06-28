@@ -5,7 +5,7 @@ import facebook from "../../assests/Facebook.svg";
 import twitter from "../../assests/Twitter.svg";
 import instagram from "../../assests/Instagram.svg";
 import linkedin from "../../assests/LinkedIn.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   const handleEmailClick = () => {
@@ -29,59 +29,56 @@ const Footer = () => {
           </Link>
           <div className="flex flex-col">
             <h2 className="text-base font-body">Our services</h2>
-            <ul className="mt-2.5 md:mt-6 text-sm font-body">
-              <Link to="/service/1" className="py-2">
+            <ul className="mt-2.5 md:mt-6 text-sm font-body flex flex-col">
+              <NavLink to="/service/inland" className="py-2">
                 Inland services
-              </Link>
-              <Link
-                to="/service/2"
+              </NavLink>
+              <NavLink
+                to="/service/freight"
                 className="py-2 flex justify-between items-center"
               >
                 Shipping/air freight
                 <button className="px-1 border text-secondary-200 border-secondary-200 rounded-xl text-[0.625rem] md:text-[0.5rem]">
                   Coming soon
                 </button>
-              </Link>
-              <Link
-                to="/service/3"
+              </NavLink>
+              <NavLink
+                to="/service/railcargo"
                 className="py-2 flex justify-between items-center"
               >
                 Railway cargo services
                 <button className="px-1 border text-secondary-200 border-secondary-200 rounded-xl text-[0.625rem] md:text-[0.5rem]">
                   Coming soon
                 </button>
-              </Link>
+              </NavLink>
             </ul>
           </div>
           <div className="flex flex-col">
             <h2 className="text-base font-body">Marketplace</h2>
             <ul className="mt-2.5 md:mt-6 text-sm font-body flex flex-col">
-              <Link to="/marketplace/1" className="py-2">
+              <NavLink to="/marketplace/manufacturers" className="py-2">
                 For manufacturers
-              </Link>
-              <Link to="/marketplace/2" className="py-2">
+              </NavLink>
+              <NavLink to="/marketplace/transporters" className="py-2">
                 For transporters
-              </Link>
-              <Link to="/marketplace/3" className="py-2">
-                For Linkstributors
-              </Link>
+              </NavLink>
             </ul>
           </div>
           <div className="flex flex-col">
             <h2 className="text-base font-body">Company</h2>
             <ul className="mt-2.5 md:mt-6 text-sm font-body flex flex-col">
-              <Link to="/company#about" className="py-2">
+              <NavLink to="/company#about" className="py-2">
                 About us
-              </Link>
-              <Link to="/company#advisory" className="py-2">
+              </NavLink>
+              <NavLink to="/company#advisory" className="py-2">
                 Our team
-              </Link>
-              <Link to="/company#advisory" className="py-2">
+              </NavLink>
+              <NavLink to="/company#advisory" className="py-2">
                 Our advisory board
-              </Link>
-              <Link to="/company#faq" className="py-2">
+              </NavLink>
+              <NavLink to="/company#faq" className="py-2">
                 FAQ
-              </Link>
+              </NavLink>
               <div className="py-2 flex justify-between items-center">
                 <span>Hiring</span>
                 <button className="px-1 border text-secondary-200 border-secondary-200 rounded-xl text-[0.625rem] md:text-[0.5rem]">
