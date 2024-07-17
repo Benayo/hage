@@ -8,8 +8,9 @@ import trucksMobile from "../../../assests/trucksmobile.png";
 
 const AboutusFeatures = () => {
   return (
-    <div id="#about" className="bg-white-100">
-      <div className="px-4 md:px-16">
+    <div className="bg-white-100 py--8 md:py-20"> 
+      <div  className="px-4 md:px-16 ">
+
         <div>
           <div className="grid md:grid-cols-2 gap-y-8 md:gap-y-0 md:gap-x-20 text-primary-300 pb-10 md:pb-20">
             <div className="order-2 md:order-1">

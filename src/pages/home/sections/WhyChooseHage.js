@@ -8,7 +8,7 @@ import trucksMobile from "../../../assests/trucksmobile.png";
 
 const WhyChooseHage = () => {
   const handleBookDemoClick = () => {
-    window.location.href = "mailto:info@hage.com";
+    window.location.href = "mailto:info@tryhage.com";
   };
   return (
     <div className="bg-white-200 px-4 md:px-16">

@@ -9,6 +9,24 @@ const Navbar = () => {
   const [showServiceDropdown, setShowServiceDropdown] = useState(false);
   const [showCompanyDropdown, setShowCompanyDropdown] = useState(false);
 
+
+
+
+
+  const scrollToMarketplace = () => {
+    const marketplaceSection = document.getElementById('marketplace');
+    if (marketplaceSection) {
+      const navbarHeight = document.querySelector("nav").offsetHeight;
+      const sectionPosition = marketplaceSection.offsetTop - navbarHeight;
+      window.scrollTo({
+        top: sectionPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+
+
   return (
     <nav>
       <div className="flex justify-between items-center px-4 py-4 md:px-16 md:py-6 w-full bg-primary-100 text-white-100 font-body">
@@ -165,7 +183,7 @@ const Navbar = () => {
         </ul>
 
         {/* Sign up button */}
-        <button className="hidden md:flex justify-center items-center px-4 py-2.5 bg-secondary-200 rounded-lg text-sm font-light">
+        <button onClick={scrollToMarketplace} className="hidden md:flex justify-center items-center px-4 py-2.5 bg-secondary-200 rounded-lg text-sm font-light">
           Sign up for Marketplace
         </button>
       </div>

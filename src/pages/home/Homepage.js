@@ -10,12 +10,15 @@ import TeamHage from "./sections/TeamHage";
 import Hiring from "./sections/Hiring";
 
 const Homepage = () => {
+
+
+
   return (
     <>
       <Hero />
       <WhyChooseHage />
       <SuccessCount />
-      <Marketplacesection />
+     <section id="marketplace"><Marketplacesection /></section> 
       <Pricing />
       <AdvisoryBoard />
       <TeamHage />

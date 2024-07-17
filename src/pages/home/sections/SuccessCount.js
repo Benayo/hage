@@ -18,7 +18,7 @@ const SuccessCount = () => {
               300+
             </h1>
             <p className=" text-sm md:text-base font-body font-light text-primary-100">
-              Transporters
+              Customers
             </p>
           </div>
 

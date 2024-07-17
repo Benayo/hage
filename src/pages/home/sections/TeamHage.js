@@ -1,7 +1,7 @@
 import React from "react";
 
 import image1 from "../../../assests/ola-omotosho.png";
-import image2 from "../../../assests/oladipupo-sulaiman.png";
+// import image2 from "../../../assests/oladipupo-sulaiman.png";
 import image3 from "../../../assests/mojisola-omotosho.png";
 import mail from "../../../assests/mail.svg";
 import linkdein from "../../../assests/LinkedInfilled.svg";
@@ -16,19 +16,9 @@ const teamMembers = [
     email: "oomotosho@naijawaysglobal.com",
     linkedin: "https://www.linkedin.com/in/olamilekan-omotosho-2b5085b2/",
     image: image1,
-  },
-  {
-    name: "Oladipupo Sulaiman",
-    position: "CIO / Co-founder",
-    description:
-      "An enterprise architect who excels in Digital Transformation and Consulting by driving growth in FMCG and logistics through scalable architectures.",
-    email: "tech@naijawaysglobal.com",
-    linkedin: "https://www.linkedin.com/in/oladipupo-sulaiman-397395119/",
-    image: image2,
-  },
-  {
+  },{
     name: "Mojisola Omotosho",
-    position: "CIO/ Co-founder",
+    position: "COO / Co-founder",
     description:
       "A finance professional who seamlessly integrates finance expertise with logistics proficiency, drawing from a decade in the family trucking business and a successful banking tenure.",
     email: "momotosho@naijawaysglobal.com",
