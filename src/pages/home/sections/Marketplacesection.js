@@ -7,6 +7,7 @@ import marketplace2mobile from "../../../assests/marketplace2mobile.svg";
 
 const Marketplacesection = () => {
   return (
+    <section>
     <div className="bg-white-200 py-8 md:py-16">
       <div className="px-4 md:px-16">
         <div className="pb-8">
@@ -84,6 +85,7 @@ const Marketplacesection = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

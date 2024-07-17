@@ -30,7 +30,7 @@ const faqsData = {
 
   "What happens if there's a problem with my shipment?":
     "Our platform allows for clear communication between all parties involved. You can report any issues directly through the platform, and our support team is available to assist in resolving any disputes or unexpected situations.",
-  // Add more questions and answers as needed
+
 };
 
 const Company = () => {
@@ -41,7 +41,13 @@ const Company = () => {
     if (hash) {
       const targetSection = document.getElementById(hash.slice(1));
       if (targetSection) {
-        const navbarHeight = document.querySelector("nav").offsetHeight;
+        let navbarHeight = document.querySelector("nav").offsetHeight;
+
+        // Adjust navbarHeight for mobile view (if necessary)
+        if (window.innerWidth <= 768) {
+          navbarHeight = 100; // Example height for mobile navbar, adjust as needed
+        }
+
         const targetPosition =
           targetSection.getBoundingClientRect().top +
           window.pageYOffset -
@@ -51,12 +57,13 @@ const Company = () => {
     }
   }, [location]);
 
+
   return (
     <>
-      <section id="about">
-        <AboutusFeatures />
-        <BookDemo demoButtonText="Check it out" />
-      </section>
+     <section id="about"><AboutusFeatures />
+     <BookDemo demoButtonText="Check it out" /></section>
+        
+
 
       <section id="advisory">
         <AdvisoryBoard />
