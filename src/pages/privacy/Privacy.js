@@ -165,8 +165,7 @@ const PrivacyPage = () => {
                     </li>
                   </ul>
                   <p className=" leading-8">
-                    To exercise these rights, contact us at [Insert Contact
-                    Email].
+                    To exercise these rights, contact us at Hello@tryhage.com.
                   </p>
                 </section>
 
