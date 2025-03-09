@@ -7,32 +7,55 @@ import WhyChooseUs from "./sections/WhyChooseUs";
 import Marketplacesection from "../home/sections/Marketplacesection";
 import Faqs from "../../components/FAQs/Faqs";
 import BookDemo from "../../components/Bookdemo/BookDemo";
-
-const faqsData = {
-  "What types of goods can I ship using Inland Services?":
-    "Our Inland Services can handle a wide range of goods for domestic transportation. Some include:  Machinery, building materials, furniture, appliances, electronics, clothing, packaged food, beverages.",
-  "How do I get a quote for my shipment?":
-    "To get a quick and accurate quote for your Inland shipment, we recommend signing up for a free account on our manufacturer platform.",
-  "What is the estimated delivery time for my shipment?":
-    "The estimated delivery time for your Inland shipment depends on several factors, like origin and destination, type of service, shipment size and weight.",
-  // Add more questions and answers as needed
-};
+import ServiceHeader from "./sections/ServiceHeader";
+import BusinessCallToAction from "../home/sections/BusinessCallToAction";
+import HowWeServe from "./sections/HowWeServe";
+import servicehero from "../../assests/inlandlogistics.png";
 
 const Inland = () => {
+  const faqs = [
+    {
+      question: "How can I send cargo to my distributors?",
+      answer:
+        "Register as an enterprise. You can create a new account on our Marketplace. Find your selected distributors and create an order with them. You might need to invite your distributors if they are not on the marketplace.",
+    },
+    {
+      question: "How can I sign up as a distributor?",
+      answer:
+        "Download our mobile app. Login or create an account as a distributor. Find suppliers or manufacturers and create your order with them.",
+    },
+    {
+      question: "How can I become a truck transporter?",
+      answer:
+        "Download our mobile app and login or create an account as a transporter. You will receive orders from our numerous enterprises.",
+    },
+    {
+      question: "How can I earn with my fleet?",
+      answer:
+        "Download our mobile app and login or create an account as a fleet manager. You will receive orders from our numerous enterprises.",
+    },
+  ];
+
+  const bgcolor = "bg-white-100";
+
+  const data = {
+    title: "Seamless Logistics for Your Business",
+    subtitle:
+      "Fast, reliable, and transparent delivery solutions tailored for enterprises, SMEs, and transporters. Track deliveries in real-time and optimize your supply chain effortlessly.",
+    buttonText: "Join Waitlist",
+    placeholderName: "e.g Lekan Omotosho",
+    placeholderEmail: "Example@gmail.com",
+    bgImage: servicehero, // Replace with actual image path
+    badge: false,
+  };
+
   return (
     <>
-      <ServiceFeatures
-        titleA="Efficient"
-        titleB="made easy"
-        spanTitle="domestic transportation"
-        subTitle="Connect with reliable carriers for your road freight needs across the country."
-        image={trucks}
-        imageMobile={trucksMobile}
-      />
-      <WhyChooseUs />
-      <Marketplacesection />
-      <Faqs faqsData={faqsData} />
-      <BookDemo signUpButtonText="Sign up today" demoButtonText="Book a demo" />
+      <ServiceHeader data={data} />
+      <HowWeServe />
+      <Marketplacesection bgcolor={bgcolor} />
+      <Faqs faqs={faqs} />
+      <BusinessCallToAction />
     </>
   );
 };

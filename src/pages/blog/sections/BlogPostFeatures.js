@@ -16,9 +16,8 @@ const BlogPostFeatures = ({ posts }) => {
 
   return (
     <div className="bg-white-100 transition-opacity duration-500">
-      <div className="px-4 md:px-16 md:py-4">
+      <div className="px-4 md:px-16 md:pt-12 md:pb-8">
         <div className="flex flex-col justify-center items-center">
-          <h4 className="text-base font-body font-normal mb-4">Blog</h4>
           <h1 className="md:w-1/2 text-center font-main font-normal text-2xl md:text-5xl leading-9 md:leading-tight">
             Explore industry insights and practical advice
           </h1>

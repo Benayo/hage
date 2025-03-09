@@ -1,34 +1,30 @@
 import React from "react";
+import chevrondown from "../../assests/chevrondown.svg";
 
-const Faqs = ({ faqsData }) => {
+const Faqs = ({ faqs }) => {
   return (
-    <div id="#faq" className="bg-white-100 py-8 md:py-28">
-      <div className="px-4 md:px-16">
-        <div className="flex justify-center items-center pb-8 md:pb-16">
-          <h1 className="font-main font-normal text-2xl md:text-5xl leading-9 md:leading-tight">
-            FAQs
-          </h1>
-        </div>
+    <div className="bg-[#F7FBF9] px-4 md:px-20 py-8 md:py-16">
+      <h2 className="text-center text-2xl md:text-5xl font-main font-semibold text-primary-200 mb-12">
+        Frequently Asked Questions
+      </h2>
 
-        <div className="grid md:grid-cols-3 gap-x-12 md:gap-y-20 gap-12">
-          {Object.entries(faqsData).map(([question, answer]) => (
-            <div
-              key={question}
-              className="grid grid-row-4 gap-4 text-primary-300"
-            >
+      <div className="md:max-w-4xl mx-auto">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="flex flex-col mb-3 bg-white-100 font-body  text-lg p-6"
+          >
+            <div className="flex justify-between items-center">
+              <p className="font-bold leading-tight">{faq.question}</p>
               <div>
-                <h3 className="font-body text-base font-semibold text-center leading-6">
-                  {question}
-                </h3>
-              </div>
-              <div>
-                <p className="font-body font-light text-sm md:text-base leading-7">
-                  {answer}
-                </p>
+                <img src={chevrondown} alt="icon" />
               </div>
             </div>
-          ))}
-        </div>
+            <div className="mt-2 font-normal leading-snug text-[#3C3C43D9]">
+              {faq.answer}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

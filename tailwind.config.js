@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        main: ["Raleway"],
+        main: ["Outfit"],
         body: ["Inter"],
         sub: ["Avenir"],
       },

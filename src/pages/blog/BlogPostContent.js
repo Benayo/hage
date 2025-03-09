@@ -5,6 +5,7 @@ import BlogPostContentFeatures from "./sections/BlogPostContentFeatures";
 import BookDemo from "../../components/Bookdemo/BookDemo";
 import RelatedBlogPost from "./sections/RelatedBlogPost";
 import BlogLoadingState from "../../components/ui/BlogLoadingState";
+import BusinessCallToAction from "../home/sections/BusinessCallToAction";
 
 const BlogPostContent = ({ posts }) => {
   const params = useParams();
@@ -49,8 +50,8 @@ const BlogPostContent = ({ posts }) => {
   return (
     <>
       <BlogPostContentFeatures post={post} />
-      <BookDemo signUpButtonText="Sign up today" demoButtonText="Book demo" />
       <RelatedBlogPost postId={postId} posts={posts} />
+      <BusinessCallToAction />
     </>
   );
 };

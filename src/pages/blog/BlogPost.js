@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import BlogPostFeatures from "./sections/BlogPostFeatures";
 import Marketplacesection from "../home/sections/Marketplacesection";
 import BlogLoadingState from "../../components/ui/BlogLoadingState";
+import BusinessCallToAction from "../home/sections/BusinessCallToAction";
 
 const BlogPost = ({ posts }) => {
   const [loading, setLoading] = useState(true);
@@ -39,7 +40,8 @@ const BlogPost = ({ posts }) => {
   return (
     <>
       <BlogPostFeatures posts={posts} />
-      <Marketplacesection />
+      <BusinessCallToAction />
+
     </>
   );
 };

@@ -2,28 +2,27 @@ import React from "react";
 
 import Hero from "./sections/Hero";
 import WhyChooseHage from "./sections/WhyChooseHage";
-import SuccessCount from "./sections/SuccessCount";
 import Marketplacesection from "./sections/Marketplacesection";
 import Pricing from "./sections/Pricing";
-import AdvisoryBoard from "./sections/AdvisoryBoard";
-import TeamHage from "./sections/TeamHage";
-import Hiring from "./sections/Hiring";
+import About from "./sections/About";
+import Blog from "./sections/Blog";
+import BusinessCallToAction from "./sections/BusinessCallToAction";
 
 const Homepage = () => {
-
-
+  const bgcolor = "bg-white-200";
 
   return (
-    <>
+    <div className="pt-8 md:pt-16">
       <Hero />
+      <section id="marketplace">
+        <Marketplacesection bgcolor={bgcolor} />
+      </section>
       <WhyChooseHage />
-      <SuccessCount />
-     <section id="marketplace"><Marketplacesection /></section> 
       <Pricing />
-      <AdvisoryBoard />
-      <TeamHage />
-      <Hiring />
-    </>
+      <About />
+      <Blog />
+      <BusinessCallToAction />
+    </div>
   );
 };
 
