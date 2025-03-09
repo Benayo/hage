@@ -48,8 +48,7 @@ const AdvisoryBoard = () => {
   };
 
   return (
-    <div className="bg-white-100 py-8 md:py-16">
-      <div className="px-4 md:px-16">
+    <div className="bg-white-100 py-8 md:py-16 px-4 md:px-20">
         <div className="flex flex-col justify-center items-center">
           <h4 className="text-base font-body font-normal mb-4">Meet</h4>
           <h1 className="font-main font-normal text-2xl md:text-5xl leading-9 md:leading-tight">
@@ -90,7 +89,7 @@ const AdvisoryBoard = () => {
             </div>
           ))}
         </div>
-      </div>
+      
     </div>
   );
 };

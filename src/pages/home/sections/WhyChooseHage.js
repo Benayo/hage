@@ -11,9 +11,9 @@ const WhyChooseHage = () => {
     window.location.href = "mailto:info@tryhage.com";
   };
   return (
-    <div className="bg-white-200 px-4 md:px-16">
+    <div className="bg-white-200 px-4 md:px-16 font-main">
       <div className="py-8  md:py-16  ">
-        <div className="grid md:grid-cols-2 gap-y-8 md:gap-y-0 md:gap-x-20 text-primary-300 pb-12 md:pb-20">
+        {/* <div className="grid md:grid-cols-2 gap-y-8 md:gap-y-0 md:gap-x-20 text-primary-300 pb-12 md:pb-20">
           <div className="flex flex-col justify-center">
             <h3 className="pb-2 md:pb-6 text-sm md:text-base leading-6  font-semibold">
               Why choose Hage?
@@ -49,8 +49,8 @@ const WhyChooseHage = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="p-6 grid grid-rows-4 md:grid-rows-none md:grid-cols-4 gap-8 bg-primary-100 rounded-xl ">
+        </div> */}
+        <div className="p-6 grid grid-rows-4 md:grid-rows-none md:grid-cols-3 gap-8 bg-primary-100 rounded-xl ">
           <div className="p-5 grid grid-cols-4 bg-white-300 rounded-xl">
             <img src={money} alt="money" className="rounded-full" />
 
@@ -95,28 +95,10 @@ const WhyChooseHage = () => {
             </div>
           </div>
 
-          <div className="p-5 grid grid-cols-4 bg-white-300 rounded-xl">
-            <img
-              src={graph}
-              alt="graph"
-              className="rounded-full bg-secondary-300"
-            />
-
-            <div className=" col-span-3">
-              <h4 className="text-sm md:text-base font-semibold pb-2">
-                Data-Driven Decisions
-              </h4>
-              <p className=" font-body font-light text-xs md:text-sm leading-7 text-[#344054]">
-                Make informed decisions based on real-time insights. Plan
-                inventory replenishment strategically and ensure products are
-                always available to meet customer demand.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
 
-      <div className=" py-8 md:py-28">
+      {/* <div className=" py-8 md:py-28">
         <div className="grid md:grid-cols-2 gap-y-6 md:gap-y-0  ">
           <div className="flex flex-col justify-center text-primary-300">
             <h1 className="text-2xl md:text-4xl font-normal font-main leading-8 pb-3 md:pb-6 ">
@@ -187,7 +169,7 @@ const WhyChooseHage = () => {
             className=" flex md:hidden w-full"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

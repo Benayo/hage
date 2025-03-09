@@ -4,31 +4,32 @@ import { Link } from "react-router-dom";
 import noImage from "../../../assests/noBlogImage.png";
 
 const BlogItemPost = ({ post }) => {
+  // http://localhost:1337${post.attributes.coverImage.data.attributes.url}
   const imageUrl =
     post.attributes &&
     post.attributes.coverImage &&
     post.attributes.coverImage.data
-      ? `http://localhost:1337${post.attributes.coverImage.data.attributes.url}`
+      ? post.attributes.coverImage.data.attributes.url
       : noImage;
+
+  console.log(imageUrl);
+
   return (
     <Link to={`/blogpost/${post.id}`}>
       <img
         src={imageUrl}
         alt="Blog"
-        className="mb-6 h-[16rem] md:h-[18.75rem] w-full object-cover object-center"
+        className="mb-6 h-[16rem] md:h-[18.75rem] w-full object-cover object-center rounded-lg"
       />
 
-      <div className="mb-6">
-        <h1 className="mb-2 text-xl font-bold font-main">
+      <div className="mb-6"> 
+        <h1 className="mb-1.5 text-xl font-bold font-main">
           {post.attributes && post.attributes.blogTitle}
         </h1>
-
-        <p className="font-light font-body">
-          {post.attributes && post.attributes.blogSummary}
-        </p>
       </div>
 
       <div>
+        
         <h4 className="text-sm font-semibold mb-1.5">
           {post.attributes && post.attributes.author}
         </h4>
