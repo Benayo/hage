@@ -19,6 +19,7 @@ import useFetch from "./hooks/useFetch";
 import { useEffect } from "react";
 import Crossborder from "./pages/ourservice/Crossborder";
 import blogimage from "./assests/blog-image.png";
+import Distributors from "./pages/marketplace/Distributors";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -120,6 +121,109 @@ function App() {
           },
         },
       },
+      {
+        id: 5,
+        attributes: {
+          blogTitle: "How to optimize supply chain management",
+          blogSummary: "Practical tips for improving supply chain efficiency.",
+          author: "Lekan Omotosho",
+          publishedDate: "15 May 2024",
+          readTime: "6 min read",
+          coverImage: {
+            data: {
+              attributes: {
+                url: blogimage,
+              },
+            },
+          },
+        },
+      },
+      {
+        id: 6,
+        attributes: {
+          blogTitle: "How to optimize supply chain management",
+          blogSummary: "Practical tips for improving supply chain efficiency.",
+          author: "Lekan Omotosho",
+          publishedDate: "15 May 2024",
+          readTime: "6 min read",
+          coverImage: {
+            data: {
+              attributes: {
+                url: blogimage,
+              },
+            },
+          },
+        },
+      },
+      {
+        id: 7,
+        attributes: {
+          blogTitle: "How to optimize supply chain management",
+          blogSummary: "Practical tips for improving supply chain efficiency.",
+          author: "Lekan Omotosho",
+          publishedDate: "15 May 2024",
+          readTime: "6 min read",
+          coverImage: {
+            data: {
+              attributes: {
+                url: blogimage,
+              },
+            },
+          },
+        },
+      },
+      {
+        id: 8,
+        attributes: {
+          blogTitle: "How to optimize supply chain management",
+          blogSummary: "Practical tips for improving supply chain efficiency.",
+          author: "Lekan Omotosho",
+          publishedDate: "15 May 2024",
+          readTime: "6 min read",
+          coverImage: {
+            data: {
+              attributes: {
+                url: blogimage,
+              },
+            },
+          },
+        },
+      },
+      {
+        id: 9,
+        attributes: {
+          blogTitle: "How to optimize supply chain management",
+          blogSummary: "Practical tips for improving supply chain efficiency.",
+          author: "Lekan Omotosho",
+          publishedDate: "15 May 2024",
+          readTime: "6 min read",
+          coverImage: {
+            data: {
+              attributes: {
+                url: blogimage,
+              },
+            },
+          },
+        },
+      },
+      {
+        id: 10,
+        attributes: {
+          blogTitle: "How to optimize supply chain management",
+          blogSummary: "Practical tips for improving supply chain efficiency.",
+          author: "Lekan Omotosho",
+          publishedDate: "15 May 2024",
+          readTime: "6 min read",
+          coverImage: {
+            data: {
+              attributes: {
+                url: blogimage,
+              },
+            },
+          },
+        },
+      },
+     
     ],
   };
   
@@ -138,6 +242,7 @@ function App() {
           />
 
           <Route path="/marketplace/transporters" element={<Transporters />} />
+          <Route path="/marketplace/distributors" element={<Distributors />} />
 
           <Route path="/service/inland" element={<Inland />} />
           

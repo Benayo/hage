@@ -22,10 +22,13 @@ const Layout = ({ children }) => {
 
   return (
     <div>
- <header
+      <header
         className={`z-50 w-full transition-transform duration-300 ${
-          isScrolled ? "fixed top-0 left-0 translate-y-0" : "relative translate-y-0"
-        }`}>
+          isScrolled
+            ? "fixed top-0 left-0"
+            : "relative"
+        }`}
+      >
         <HeaderInfo />
         <div className="hidden md:grid">
           <Navbar />

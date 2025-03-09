@@ -4,8 +4,9 @@ import MarketplaceFeatures2 from "./sections/MarketplaceFeatures2";
 import BookDemo from "../../components/Bookdemo/BookDemo";
 import BusinessCallToAction from "../home/sections/BusinessCallToAction";
 import Faqs from "../../components/FAQs/Faqs";
+import MarketplaceFeatures3 from "./sections/MarketplaceFeatures3";
 
-const Manufacturers = () => {
+const Distributors = () => {
   const faqs = [
     {
       question: "How can I send cargo to my distributors?",
@@ -30,11 +31,12 @@ const Manufacturers = () => {
   ];
   return (
     <>
-      <MarketplaceFeatures2 />
+      <MarketplaceFeatures3 />
       <Faqs faqs={faqs} />
+
       <BusinessCallToAction />
     </>
   );
 };
 
-export default Manufacturers;
+export default Distributors;

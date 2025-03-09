@@ -14,10 +14,8 @@ const MarketplaceFeatures2 = () => {
           <div className=" flex justify-center items-center order-2 md:order-1 mt-8 md:mt-0 mb-12 md:mb-0">
             <div>
               <h1 className="  md:px-0 pb-4  text-[2rem] md:text-[3.8rem]  font-normal font-main text-left text-primary-200  md:leading-normal">
-                Transform your shipments with Hage's{" "}
-                <span className="text-secondary-100">
-                  manufacturers platform
-                </span>
+                Monitor your shipments with Hage's{" "}
+                <span className="text-secondary-100">enterprise platform</span>
               </h1>
 
               <p className="w-[90%] md:w-[80%] text-base text-primary-100 leading-7 pb-4 md:pb-0 font-sub">
@@ -27,7 +25,7 @@ const MarketplaceFeatures2 = () => {
 
               <div className="flex items-center mt-8 md:w-[80%]">
                 <button className="py-3 bg-secondary-200 text-white-100 w-full rounded-md">
-                  Sign up
+                  Join our waitlist{" "}
                 </button>
               </div>
             </div>
@@ -41,12 +39,6 @@ const MarketplaceFeatures2 = () => {
         </div>
 
         <div className=" py-8 md:py-16">
-          <div className="flex justify-center items-center">
-            <h1 className=" font-main font-normal text-2xl md:text-5xl leading-9 md:leading-tight">
-              Top features
-            </h1>
-          </div>
-
           <div className="grid md:grid-cols-2 gap-10">
             <div>
               <img src={marketplace2image2} alt="marketplaceimage1" />
@@ -91,9 +83,9 @@ const MarketplaceFeatures2 = () => {
                   </li>
                 </ul>
 
-                <div className="flex items-center mt-8">
-                  <button className="rounded-md border border-primary-100 text-primary-100 text-center py-3 w-full md:w-[50%] ">
-                    Sign up
+                <div className="flex items-center mt-8 md:w-[80%]">
+                  <button className="py-3 bg-secondary-200 text-white-100 w-full rounded-md">
+                    Join our waitlist{" "}
                   </button>
                 </div>
               </div>
@@ -139,9 +131,9 @@ const MarketplaceFeatures2 = () => {
                   </li>
                 </ul>
 
-                <div className="flex items-center mt-8">
-                  <button className="rounded-md border border-primary-100 text-primary-100 text-center py-3 w-full md:w-[50%] ">
-                    Sign up
+                <div className="flex items-center mt-8 md:w-[80%]">
+                  <button className="py-3 bg-secondary-200 text-white-100 w-full rounded-md">
+                    Join our waitlist{" "}
                   </button>
                 </div>
               </div>
